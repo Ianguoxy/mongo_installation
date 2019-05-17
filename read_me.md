@@ -112,3 +112,7 @@ restart and login with root
         >exit()
         bye
 
+        > use ELSA-USER-SERVICE
+        switched to db ELSA-USER-SERVICE
+        > db.dropDatabase()
+        { "dropped" : "ELSA-USER-SERVICE", "ok" : 1 }
