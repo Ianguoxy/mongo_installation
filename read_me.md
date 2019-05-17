@@ -25,6 +25,15 @@
 
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
+update config file:  https://docs.mongodb.com/manual/reference/configuration-options/
+
+        $> sudo vi /etc/mongod.conf 
+        
+        net:
+          port: 27017    
+          bindIp: 127.0.0.1   --> bindIp: 0.0.0.0 
 
 
+        security:   -->  security:
+                           authorization: enabled
 
