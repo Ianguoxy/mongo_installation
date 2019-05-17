@@ -62,7 +62,8 @@ create root user
         }
         > db.auth("root", "abcdef");
         1
-restart and login with root 
+        
+restart and login with root to create db auth user as below:
 
         (base) ianguo@ianguo:~$ sudo service mongod restart
         mongod stop/waiting
@@ -111,6 +112,8 @@ restart and login with root
         > db.grantRolesToUser("mongodb",[{role:"dbOwner",db:"ELSA_WPG_TMS"}])
         >exit()
         bye
+
+delete database
 
         > use ELSA-USER-SERVICE
         switched to db ELSA-USER-SERVICE
